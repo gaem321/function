@@ -1,0 +1,2 @@
+def apply_discount(PRICE, DISCOUNT):
+    return PRICE * (1 - DISCOUNT / 100)
