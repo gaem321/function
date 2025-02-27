@@ -1,0 +1,2 @@
+def concatenate_strings(STR1, STR2, STR3):
+    return STR1 + STR2 + STR3
