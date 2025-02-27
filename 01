@@ -1,0 +1,18 @@
+def get_month_name(month_number):
+    months = {
+        1: 'JANUARY', 2: 'FEBRUARY', 3: 'MARCH', 4: 'APRIL', 5: 'MAY', 
+        6: 'JUNE', 7: 'JULY', 8: 'AUGUST', 9: 'SEPTEMBER', 10: 'OCTOBER', 
+        11: 'NOVEMBER', 12: 'DECEMBER'
+    }
+    
+    # เช็คว่าเลขเดือนที่รับมาอยู่ในช่วงที่ถูกต้องหรือไม่
+    if 1 <= month_number <= 12:
+        return months[month_number]
+    else:
+        return "Invalid month number! Please enter a number between 1 and 12."
+
+# รับเลขเดือนจากผู้ใช้
+month_number = int(input("Enter a month number (1-12): "))
+
+# แสดงชื่อเดือน
+print(f"The month is: {get_month_name(month_number)}")
